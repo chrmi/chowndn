@@ -9,11 +9,11 @@ A command line tool for people of transgender experience to replace their dead n
 
 This repo is currently _VAPORWARE_ -- it does not have any functionality beyond providing a CLI interface to start developing on.
 
-The __primary__ purpose to releasing a functionally non-working repository is to provide a framework to problem solve a difficult problem -- how to rewrite history within a Git repo without compromising an existing codebase.
+The __primary__ purpose of releasing a functionally non-working repository is to provide a framework to problem solve a difficult problem -- how to rewrite history within a Git repo without compromising an existing codebase.
 
-The __secondary__ purpose to releasing a bare-bones scaffold is to encourage community involvement from a diverse and inclusive audience, who would benefit from learning Rust and Git along the way.  By started from scratch, we have an opportunity to learn these tools from humble beginnings without pressure of coming in with a particular skill set.  Imposter syndrome is real -- please do not let it prevent it from leveraging this project as a means to learn and connect with the community!
+The __secondary__ purpose of releasing a bare-bones scaffold is to encourage community involvement from a diverse and inclusive audience, who would benefit from learning Rust and Git along the way.  By starting from scratch, we have the opportunity to learn these tools from humble beginnings without the pressure of coming in with a particular skill set.  Imposter syndrome is real -- please do not let it prevent you from leveraging this project as a means to learn and connect with the community!
 
-Ideally, this tool will be able to checkout out and commit in-place rewrites to keep the original repo intact.  If this is not possible, or as an alternate implementation offered through an option flag, a new repo instance could be generated with the desired name changes.  The later will not work for many use cases, but could still be sufficient for some.
+Ideally, this tool will be able to checkout and commit in-place rewrites to keep the original repo intact.  If this is not possible, or as an alternate implementation offered through an option flag, a new repo instance could be generated with the desired name changes.  The latter will not work for many use cases, but could still be sufficient for some.
 
 
 Basic command interface (see Makefile):
@@ -21,7 +21,7 @@ Basic command interface (see Makefile):
 ```
 chowndn version
 chowndn scan Jack ./myrepo
-chowndn replease Jack Jill ./myrepo
+chowndn replace Jack Jill ./myrepo
 ```
 
 Expected workflow:
@@ -35,4 +35,4 @@ Unknown handling:
 * Rename the main branch, and rename the working branch to main.
 * Force push the new main branch.  For each non-temporary branch, set its origin to the new main.
 
-Thought and Git expertise will be critical to solve this problem correctly.  See the GitHub Issues for this repo as a means of having discussions on approaching individual technical challenges.  For informal discussion, use the #chowndn hashtag and tag [@chrmi](https://tech.lgbt/@chrmi) on Mastodon.
+Careful thought and Git expertise will be critical to solving this problem correctly.  See the GitHub Issues for this repo as a means of having discussions on approaching individual technical challenges.  For informal discussion, use the #chowndn hashtag and tag [@chrmi](https://tech.lgbt/@chrmi) on Mastodon.
